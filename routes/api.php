@@ -56,6 +56,7 @@ Route::prefix('purchase')->group(function () {
     Route::post('payment/{user_id}/{id}', [PurchaseController::class, 'payment']);
     Route::post('create/{user_id}', [PurchaseController::class, 'create']);
     Route::delete('delete/{id}', [PurchaseController::class, 'destroy']);
+    Route::delete('coba1/{id}', [PurchaseController::class, 'destroy']);
 });
 
 // Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
